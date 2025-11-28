@@ -1,0 +1,19 @@
+<div class="container mt-3">
+  <h3>Taşınmaz Listesi</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Ad</th>
+        <th>Mahalle ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of tasinmazlar">
+        <td>{{ t.id }}</td>
+        <td>{{ t.ad }}</td>
+        <td>{{ t.mahalleId }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
